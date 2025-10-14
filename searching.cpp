@@ -14,11 +14,11 @@ void imprimir(int arr[], int n)
     cout << "\n";
 }
 
-//Imprimir
+//Busqueda Lineal
 //IDEA: recorre el arreglo elemento por elemento hasta
 //encontrar el valor buscado o llegar al final.
 //devuelve la posición del valor si se encuentra o -1 si no lo encuentra
-int busquedaLineal(int arr[], int n, int valor)
+int busquedalineal(int arr[], int n, int valor)
 {
     for(int i = 0; i < n; ++i)
     {
@@ -30,18 +30,18 @@ int busquedaLineal(int arr[], int n, int valor)
     return -1;
 }
 
-//Imprimir
+//Busqueda Binaria
 //IDEA: divide el arreglo a la mitad repetidamente para determinar
 //si el valor buscado está en la parte izquierda o derecha.
 //devuelve la posición del valor si se encuentra o -1 si no lo encuentra
-int busquedaBinaria(int arr[], int n, int valor) 
+int busquedabinaria(int arr[], int n, int valor) 
 {
     int inicio = 0;
     int fin = n - 1;
 
     while (inicio <= fin) 
     {
-        int medio = (inicio + fin) / 2; // posición central
+        int medio = (inicio + fin) / 2;
 
         if (arr[medio] == valor)
         {

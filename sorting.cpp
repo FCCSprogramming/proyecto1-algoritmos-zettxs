@@ -13,18 +13,6 @@ void intercambio(int &a, int &b)
     b = temp;
 }
 
-//Imprimir
-//IDEA: imprime los elementos de un arreglo
-// mostra el contenido del arreglo después de aplicar
-//un algoritmo de ordenamiento o búsqueda.
-void imprimir(int arr[], int n)
-{
-    for (int i = 0; i < n; ++i) {
-        cout << arr[i]<< " ";
-    }
-    cout << "\n";
-}
-
 //Burbuja
 // IDEA: comparar pares de elementos adyacentes
 // si estan en el orden incorrecto, intercambiarlos
